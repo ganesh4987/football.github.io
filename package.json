@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --output-hashing=all --configuration production --base-href /football.github.io/",
+    "build": "ng build --output-hashing=all --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
