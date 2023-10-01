@@ -1,0 +1,32 @@
+ul {
+    font-family: arial, sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 205px;
+    
+  }
+  
+  li {
+    float: left;
+    margin: 0px 100px 0px 50px;
+  
+  }
+  
+  li a {
+    display: inline-block;
+    color: #666;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  
+  ul li .active {
+    color: blue;
+    text-decoration: underline
+  }
+
+  

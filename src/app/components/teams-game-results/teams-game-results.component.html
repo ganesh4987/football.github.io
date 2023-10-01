@@ -1,0 +1,42 @@
+<div class="container-fluid">
+    <div class="row justify-content-center align-items-center g-2 mt-3">
+        <div class="card">
+            <div class="card-body mb-3">
+                <div class="spinner-border text-primary ms-3" role="status" *ngIf="showSpinner">
+                    <span class="sr-only"></span>
+                </div>
+                <div *ngFor="let fixture of resultData">
+                    <div class="row text-center p-3 justify-content-center align-items-center fw-bold">
+                        <div class="col-1">
+                            <img src={{fixture.teams.home.logo}} alt="countryflag" width="30" height="30">
+                        </div>
+                        <div class="col-2">
+                            {{fixture.teams.home.name}}
+                        </div>
+                        <div class="col-2">
+                            {{fixture.score.fulltime.home }}
+                        </div>
+                        <div class="col-1">
+                            -
+                        </div>
+                        <div class="col-2">
+                            {{fixture.score.fulltime.away}}
+                        </div>
+                        <div class="col-2">
+                            {{fixture.teams.away.name}}
+                        </div>
+                        <div class="col-2">
+                            <img src={{fixture.teams.away.logo}} alt="countryflag" width="30" height="30">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center fw-bold" *ngIf="NoData">
+                    <p class="text-center text-bold">{{'No Data Available'}}</p>
+                </div>
+                <div class="p-3">
+                    <button type="button" class="btn btn-primary btn-lg" (click)="goBack()">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

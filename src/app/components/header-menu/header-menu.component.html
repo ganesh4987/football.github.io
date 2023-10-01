@@ -1,0 +1,22 @@
+<div class="align-items-center">
+  <div class="container-fluid">
+    <div class="row justify-content-center align-items-center g-2">
+      <div class="card">
+        <div class="card-body p-1">
+          <nav>
+            <div class="col">
+              <ul>
+                <li *ngFor="let menu of countryList">
+                  <a id="{{menu.name}}Select" [routerLink]="['leagues/', menu.name,menu.id]"
+                    [class.active]="selectedMenu === menu.name" (click)="setActiveMenuItem(menu.name)">
+                    {{ menu.name }}
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
