@@ -9,7 +9,7 @@ const routes: Routes = [
   {path: 'leagues/:country/:leagueId', component: TeamsListComponent},
   {path: 'game-results/:leagueId/:teamsId/:season', component: TeamsGameResultsComponent},
 
-  {path: '**', component: PageNotFoundComponent},
+  {path: '**', component: PageNotFoundComponent, pathMatch: 'full', },
 ];
 
 @NgModule({
