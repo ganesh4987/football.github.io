@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { TeamsListComponent } from './components/teams-list/teams-list.component';
 import { HeaderMenuComponent } from './components/header-menu/header-menu.component';
 import { TeamsGameResultsComponent } from './components/teams-game-results/teams-game-results.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { TeamsGameResultsComponent } from './components/teams-game-results/teams
     TeamsListComponent,
     HeaderMenuComponent,
     TeamsGameResultsComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
