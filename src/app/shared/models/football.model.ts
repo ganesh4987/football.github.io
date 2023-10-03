@@ -6,7 +6,7 @@ export interface leaguesMenu {
 export interface StandingObject {
   get: string;
   parameters: param;
-  errors: any[];
+  errors: errorObject[];
   results: number;
   paging: Paging;
   response: StandingResponse[];
@@ -73,10 +73,16 @@ export interface param {
 export interface FixtureObject {
   get: string;
   parameters: FixtureParameters;
-  errors: any[];
+  errors: errorObject[];
   results: number;
   paging: Paging;
   response: fixtureResponse[];
+}
+
+export interface errorObject {
+  time: Date,
+  bug: string,
+  reprot: string
 }
 
 export interface fixtureResponse {
@@ -95,8 +101,8 @@ export interface Score {
 }
 
 export interface Fulltime {
-  home?: any;
-  away?: any;
+  home?: number;
+  away?: number;
 }
 
 export interface fixtureGoals {
@@ -128,7 +134,7 @@ export interface FixtureLeague {
 
 export interface Fixture {
   id: number;
-  referee?: any;
+  referee?: string;
   timezone: string;
   date: string;
   timestamp: number;
@@ -151,7 +157,7 @@ export interface Venue {
 
 export interface Periods {
   first: number;
-  second?: any;
+  second?: number;
 }
 
 export interface FixtureParameters {
