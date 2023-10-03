@@ -80,7 +80,7 @@ export interface FixtureObject {
 }
 
 export interface errorObject {
-  time: Date,
+  time: string,
   bug: string,
   reprot: string
 }
